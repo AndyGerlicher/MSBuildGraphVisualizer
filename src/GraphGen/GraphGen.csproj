@@ -19,10 +19,11 @@
   </ItemGroup>
 
   <Target Name="CopyGraphViz" AfterTargets="Build">
-    <Exec ContinueOnError="True" Command="robocopy  $(PkgGraphviz) $(OutputPath)\Graphviz">
-      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
-    </Exec>
-    <Error Condition="$(ErrorCode) &gt; 8" Message="Robocopy failed" />
+    <ItemGroup>
+      <GraphVizFiles Include="$(PkgGraphviz)\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(GraphVizFiles)"
+          DestinationFolder="$(OutputPath)\Graphviz" />
   </Target>
 
 </Project>

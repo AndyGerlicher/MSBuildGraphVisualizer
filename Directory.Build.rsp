@@ -2,5 +2,5 @@
 -MaxCPUCount
 -NodeReuse:false
 -Restore
--Property:NuGetInteractive=True
+-Property:RestoreUseStaticGraphEvaluation=true
 -Graph
