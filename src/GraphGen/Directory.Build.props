@@ -1,0 +1,5 @@
+<Project>
+    <ItemDefinitionGroup>
+        <PackageReference GeneratePathProperty="true" />
+    </ItemDefinitionGroup>
+</Project>
