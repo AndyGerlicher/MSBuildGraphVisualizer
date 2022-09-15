@@ -1,6 +1,6 @@
 ﻿namespace MSBuildGraphUI
 {
-    partial class Form1
+    partial class MSBuildGraphForm
     {
         /// <summary>
         /// Required designer variable.
@@ -148,7 +148,7 @@
             this.Controls.Add(this._statusBar);
             this.Controls.Add(this._loadButton);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MS Build Graph Visualizer";
             this._statusBar.ResumeLayout(false);
             this._statusBar.PerformLayout();
             this.tabControl1.ResumeLayout(false);

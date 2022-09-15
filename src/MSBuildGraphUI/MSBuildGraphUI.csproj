@@ -69,19 +69,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MSBuildGraphForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MSBuildGraphForm.Designer.cs">
+      <DependentUpon>MSBuildGraphForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WG\WebGraph.cs" />
     <Compile Include="WG\WGEdge.cs" />
     <Compile Include="WG\WGNode.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MSBuildGraphForm.resx">
+      <DependentUpon>MSBuildGraphForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,8 +130,7 @@
     <ItemGroup>
       <GraphVizFiles Include="$(PkgGraphviz)\*.*" />
     </ItemGroup>
-    <Copy SourceFiles="@(GraphVizFiles)"
-          DestinationFolder="$(OutputPath)\Graphviz" />
+    <Copy SourceFiles="@(GraphVizFiles)" DestinationFolder="$(OutputPath)\Graphviz" />
   </Target>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
