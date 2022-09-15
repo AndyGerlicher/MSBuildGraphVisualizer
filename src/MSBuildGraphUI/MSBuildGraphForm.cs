@@ -21,9 +21,9 @@ using Newtonsoft.Json;
 
 namespace MSBuildGraphUI
 {
-    public partial class Form1 : Form
+    public partial class MSBuildGraphForm : Form
     {
-        public Form1()
+        public MSBuildGraphForm()
         {
             InitializeComponent();
         }
